@@ -13,5 +13,5 @@ for x in set(b):
         ans = x
     elif b.count(x) == max:
         ans = '?'
-else:
-    print(ans)
+
+print(ans)
