@@ -2,12 +2,10 @@ from collections import deque
 import sys
 
 n = int(sys.stdin.readline())
-arr = [] * n
+qq = deque()
                                               
 for x in range(0, n):
-    arr.append(x+1)
-qq = deque()
-qq.extend(arr)
+    qq.append(x+1)
 
 for x in range(0, n):
     if len(qq) == 1:
