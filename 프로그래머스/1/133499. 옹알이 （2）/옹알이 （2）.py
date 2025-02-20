@@ -1,6 +1,5 @@
 def solution(babbling):
     data = ""
-    b = ["aya", "ye", "woo", "ma"]
     cnt = 0
     
     for i in babbling:
@@ -18,8 +17,6 @@ def solution(babbling):
                 data = i[:2]
                 i=i[2:]
                 s = 1
-            if(len(i)==2 and s==0):
-                break
             if(i[:3]=="aya" or i[:3]=="woo"):
                 if(i[:3] == data):
                     break
