@@ -17,6 +17,6 @@ def solution(files):
                 nc = 1
         dd.append([head, number, tail])
         
-        dd = sorted(dd, key=lambda x: (x[0].upper(), int(x[1])))
+    dd = sorted(dd, key=lambda x: (x[0].upper(), int(x[1])))
         
     return [''.join([a,b,c]) for a, b, c in dd]
