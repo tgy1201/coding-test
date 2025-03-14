@@ -1,10 +1,4 @@
 def solution(skill, skill_trees):
-    dd = {}
-    
-    for index, i in enumerate(skill):
-        dd[i] = index
-    print(dd)
-    test = []
     cnt = 0
     for i in skill_trees:
         check = 0
