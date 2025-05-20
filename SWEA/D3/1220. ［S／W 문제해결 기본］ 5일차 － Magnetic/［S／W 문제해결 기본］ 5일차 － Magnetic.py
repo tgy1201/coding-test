@@ -1,18 +1,5 @@
 from collections import deque
-def calc(l):
-    s = ''.join(l)
-    
-    if len(s)%2 == 0:
-        print(f"{s[:len(s)//2]} {s[len(s):len(s)//2-1:-1]} {s}")
-        if s[:len(s)//2] == s[len(s):len(s)//2-1:-1]:
-            return 1
-        else:
-            return 0
-    else:
-        if s[:len(s)//2] == s[len(s):len(s)//2:-1]:
-            return 1
-        else:
-            return 0
+
 #1=>N / 2->S / N|T|S
 for i in range(10):
     T = int(input())
